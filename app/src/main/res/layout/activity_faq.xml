@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.uhungry.activity.FaqActivity">
+
+    <include
+        android:id="@+id/faqActionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        layout="@layout/actionbar_layout"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_below="@+id/faqActionbar"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_2sdp"
+        android:layout_margin="@dimen/_4sdp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/recycler_view"/>
+
+    <TextView
+        android:id="@+id/tvEmptyList"
+        android:text="@string/text_no_result_found"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="@dimen/_14ssp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

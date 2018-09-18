@@ -1,0 +1,168 @@
+<resources>
+    <!--social ids-->
+    <string name="app_name">Uhungry?</string>
+    <string name="facebook_app_id">1980285082255726</string>
+    <string name="fb_login_protocol_scheme">fb1980285082255726</string>
+    <string name="banner_home_footer">ca-app-pub-5766942206949971/8197963263</string>
+    <string name="interstitial_full_screen">ca-app-pub-5766942206949971/8197963263</string>
+    <string name="addmob_app_id">ca-app-pub-5766942206949971/8197963263</string>
+
+    <!--Lohin/SIgnup screen's ui text-->
+    <string name="enter_email">Email</string>
+    <string name="enter_phone">Phone Number</string>
+    <string name="enter_pass">Password</string>
+    <string name="enter_change_pass">Change Password</string>
+    <string name="enter_old_pass">Old Password</string>
+    <string name="enter_new_pass">New Password</string>
+    <string name="enter_fullname">Full Name</string>
+    <string name="enter_contact">Contact</string>
+    <string name="enter_setting">Setting</string>
+    <string name="enter_confirm_pass">Confirm Password</string>
+    <string name="text_no_result_found">No Result Found.</string>
+    <string name="text_no_ingredients_found">You Haven\'t Added Any Ingredient in Your Kitchen!</string>
+    <string name="text_no_grocery_found">You Haven\'t Added Any Ingredient in Your Grocery List!</string>
+    <string name="text_no_fav_recipe_found">You Haven\'t Added Any Recipes to Your Favorites Yet!</string>
+    <string name="text_no_history_found">You Haven\'t Cooked Any Recipe Yet!</string>
+    <string name="text_no_recipe_found">No Recipes to Display</string>
+    <string name="text_no_step_found">No Step to Display</string>
+
+    <!--screen's titles-->
+    <string name="title_select_foodtype">Select your food type</string>
+    <string name="title_recipe_detail">Recipe Details</string>
+    <string name="title_grocerys">Grocerys</string>
+    <string name="title_discover">Discover</string>
+    <string name="title_generic_kitchen">Generic Kitchen</string>
+    <string name="title_faq">FAQs</string>
+    <string name="title_missing_ing">Missing Ingredients</string>
+    <string name="title_remove_ing">Remove Ingredients</string>
+    <string name="title_profile">My Profile</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_favourite">Favourites</string>
+    <string name="title_my_favourite">My Favourites</string>
+    <string name="title_my_ingredients">My Kitchen</string>
+    <string name="title_my_grocery">My Grocery List</string>
+    <string name="title_setup_kitchen">Set Up Kitchen</string>
+    <string name="title_cuisines">Cuisines</string>
+    <string name="title_pref">Preferences</string>
+    <string name="title_history">History</string>
+    <string name="title_subscription">Subscription</string>
+    <string name="title_termsAndConditions"><![CDATA[Terms & Conditions]]></string>
+
+    <!--Alert msg-->
+    <string name="text_alert_gps_not_on">Gps network not available !</string>
+    <string name="text_btn_open_setting">Open Location setting</string>
+    <string name="text_no_elist">No elist is added.</string>
+
+    <!--other-->
+    <string name="text_forgot_password">Forgot password?</string>
+    <string name="text_wellcome_back">Wellcome Back!</string>
+    <string name="text_quick_search">Quick Start</string>
+    <string name="text_title_quick_search">Welcome to Uhungry</string>
+    <string name="text_Remember_me">Keep me sign in</string>
+    <string name="text_register">Don\'t have an account?</string>
+    <string name="text_subcription_txt">We know this won\'t be the only time UHUNGRY? Subscribe to have this everyday for 1.99 per month
+    cancel anytime if for some mysterious reason you no longer need food!</string>
+    <string name="text_warning">Warning</string>
+    <string name="text_alert_msg_at_register">Your friends use your username to add you on Meaple.</string>
+    <string name="text_already_registered">Already have an account?</string>
+    <string name="text_terms_license">Terms and License.</string>
+    <string name="text_terms_condition">You have read and agree to the </string>
+    <string name="text_empty_devicetoken">Device token is empty please check your google play services. </string>
+    <string name="text_forgetpass">To reset your Password please enter your email address</string>
+    <string name="text_recipe">100% are ingredients you have</string>
+    <string name="text_des">Description</string>
+    <string name="text_subcribe">Subscribe</string>
+
+    <string name="text_take_photo">Take Photo </string>
+    <string name="text_chose_gellery">Choose Image</string>
+    <string name="text_add_photo">Add Photo</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_view_more">View more</string>
+    <string name="text_view_all">View All</string>
+    <string name="text_email">Email</string>
+    <string name="text_sms">Text</string>
+    <string name="text_chefs">Chefs</string>
+    <string name="text_featured_chefs">Featured Chefs</string>
+    <string name="text_videos">Videos</string>
+    <string name="text_news">News</string>
+    <string name="text_uhungry_content">Uhungry Content</string>
+    <string name="text_product">Product</string>
+    <string name="text_recipes">Recipes</string>
+    <string name="share_using">Shareing</string>
+    <string name="text_dialog">Have all Measurements ?</string>
+    <string name="text_like_rec">Do you Like this Recipe?</string>
+    <string name="text_remove_ing">Do you Want to Remove Recipe Ingredients?</string>
+    <string name="text_leave_steps">Are you Sure you Want to Leave this Recipe?</string>
+    <string name="text_leave_help">Are you Sure you Want to Leave this Help?</string>
+    <string name="text_remove">Remove</string>
+    <string name="text_favourite">Favourite</string>
+    <string name="text_finish">Finish</string>
+    <string name="text_filter">Filter</string>
+
+    <string name="alert_subscription">It seems you have subscribed from different platform, so renew from there to access features</string>
+
+
+    <!--Button's text-->
+    <string name="text_btn_yes"> Yes </string>
+    <string name="text_btn_no"> No </string>
+    <string name="text_public">Public</string>
+    <string name="text_facebook">Sign in with facebook</string>
+    <string name="btn_signin">Sign In</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_setup">Setup Kitchen</string>
+    <string name="btn_txt_done">Done</string>
+    <string name="btn_txt_imhungry">I\'m Hungry</string>
+    <string name="btn_txt_ok">Ok</string>
+    <string name="btn_txt_yes">Yes</string>
+    <string name="btn_txt_all">All</string>
+    <string name="btn_txt_apply">Apply</string>
+    <string name="btn_txt_no">No</string>
+    <string name="btn_event_page">Event Page</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_share">Share</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_submit">Submit</string>
+    <string name="text_or">OR</string>
+    <string name="text_search">Search</string>
+    <string name="text_loading">Loding....</string>
+    <string name="btn_logout">Logout</string>
+
+    <!--Error messege-->
+    <string name="network_error">Network not available. Please check network connection.</string>
+    <string name="firebase_error">firebase authentication faild please try again with another email</string>
+    <string name="please_enter_your_password">Please enter your password</string>
+    <string name="please_enter_old_password">Please enter your old password</string>
+    <string name="please_enter_correct_old_password">Please enter your correct old password</string>
+    <string name="please_enter_confirm_password">Please enter confirm password</string>
+    <string name="please_enter_your_email">Please enter your email</string>
+    <string name="please_enter_your_address">Please enter your current address</string>
+    <string name="please_enter_your_fullname">Please enter your full name</string>
+    <string name="please_enter_your_username">Please enter user name</string>
+    <string name="please_enter_valid_username">Please enter a valid user name</string>
+    <string name="please_enter_valid_fullname">Please enter at least 3 character of fullName</string>
+    <string name="please_enter_valid_password">Password Must be contain at least 6 characters</string>
+    <string name="please_enter_valid_pass">Password length must be 6 characters long.</string>
+    <string name="please_enter_a_valid_email">Please enter a valid email</string>
+    <string name="please_enter_a_valid_phone">Please enter valid phone number</string>
+    <string name="please_enter_six_digit_pass">Password must be 6 character long</string>
+    <string name="please_enter_correct_confirm_pass">Your confirm password should be same as new password</string>
+    <string name="text_no_data_available">No result found.</string>
+    <string name="please_accept_terms_and_cond"><![CDATA[Please Accept Terms & Conditions]]></string>
+
+    <!--cropping text-->
+    <string name="crop_image_activity_title">Crop Image</string>
+    <string name="crop_image_menu_rotate_left">Rotate counter clockwise</string>
+    <string name="crop_image_menu_rotate_right">Rotate</string>
+    <string name="crop_image_menu_crop">Crop</string>
+    <string name="pick_image_intent_chooser_title">Select source</string>
+    <string name="result_image_desc">crop result</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="do_you_want_try_rec_still">Do you still want to try this recipe still?</string>
+    <string name="text_no_ing_found">No Ingredient Found</string>
+    <string name="text_no_recipe_in_fav">Recipe isn\'t in Your Favorite</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_53sdp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_bg"
+        android:padding="@dimen/_2sdp"
+        >
+
+        <ImageView
+            android:id="@+id/ivGrocey"
+            android:layout_width="@dimen/_43sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/app_icon"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.uhungry.custom_widget.TextViewRobotoReguler
+                android:id="@+id/tvItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="top"
+                android:textColor="@color/red"
+                android:maxLines="1"
+                />
+
+            <com.uhungry.custom_widget.TextViewRobotoReguler
+                android:id="@+id/tvItemQuntity"
+                android:layout_width="match_parent"
+                android:paddingRight="@dimen/_5sdp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/gray"
+                android:maxLines="2"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivChecbox"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/unchecked_icon"
+        />
+    <ImageView
+        android:id="@+id/ivDropDown"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/drop_down_icon"
+        />
+
+
+</RelativeLayout>

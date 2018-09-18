@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/transperant1"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_290sdp"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/bg_subcription_alert"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/bg_twoside_border"
+            >
+
+            <com.uhungry.custom_widget.TextViewRobotoMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/_16ssp"
+                android:text="@string/text_subcribe"
+                android:clickable="false"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:id="@+id/lyDialogCross"
+                android:clickable="true"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="@dimen/_2sdp"
+                android:background="@drawable/bg_field_white_circle"
+                >
+                <ImageView
+                    android:id="@+id/ivDialogCross"
+                    android:clickable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/icon_cross"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/circle_img"/>
+
+            <com.uhungry.custom_widget.TextViewRobotoBold
+                android:id="@+id/tvSpPrise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:gravity="center"
+                android:text="$1.99/Month"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:textColor="@color/app_black"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_16ssp" />
+
+            <com.uhungry.custom_widget.TextViewRobotoReguler
+                android:id="@+id/tvSpDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:enabled="false"
+                android:textSize="@dimen/_12ssp"
+                android:padding="@dimen/_4ssp"
+                android:text="@string/text_subcription_txt"
+                android:clickable="false"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/app_black"/>
+
+            <com.uhungry.custom_widget.RippleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+                <Button
+                    android:id="@+id/btnSubcribe"
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:elevation="@dimen/_4sdp"
+                    android:text="@string/text_subcribe"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:padding="@dimen/_2sdp"
+                    android:background="@drawable/red_btn_bg"/>
+
+            </com.uhungry.custom_widget.RippleView>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <include
+        android:id="@+id/recipeActionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:visibility="visible"
+        layout="@layout/ingredients_actionbar_layout"/>
+
+    <LinearLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/recipeActionbar"
+        android:padding="@dimen/_1sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:background="@drawable/bg_tab_layout"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/lyAllGrocery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/bg_tab_selected"
+            android:clickable="true"
+            >
+            <com.uhungry.custom_widget.TextViewRobotoReguler
+                android:id="@+id/tvAllGrocery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cursorVisible="true"
+                android:text="@string/title_my_ingredients"
+                android:imeOptions="actionDone"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/lyMyGrocery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@drawable/bg_tab_unselected"
+            >
+
+            <com.uhungry.custom_widget.TextViewRobotoReguler
+                android:id="@+id/tvMyGrocery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cursorVisible="true"
+                android:text="@string/title_my_grocery"
+                android:imeOptions="actionDone"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/white"
+                android:paddingLeft="@dimen/_5sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_4sdp"
+        android:layout_below="@+id/tabLayout"
+        android:orientation="vertical">
+    </LinearLayout>
+</RelativeLayout>

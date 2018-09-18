@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/recipeActionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        layout="@layout/actionbar_recipe_layout"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/recipeActionbar"
+        android:id="@+id/rycRecipeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_above="@+id/lyAdView"
+        android:overScrollMode="never"
+        />
+
+    <com.uhungry.custom_widget.TextViewRobotoReguler
+        android:id="@+id/tvNoRecored"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_14ssp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/text_no_recipe_found"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/lyAdView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_52sdp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:background="@color/white">
+
+        <com.uhungry.custom_widget.TextViewRobotoReguler
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="@color/app_black"
+            android:text="Ad by Google"
+           />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/addmob_app_id">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+</RelativeLayout>

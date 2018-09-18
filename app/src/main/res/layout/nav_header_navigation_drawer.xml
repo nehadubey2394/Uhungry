@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_140sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="bottom|center"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/_4ssp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivProfilePic"
+        android:layout_width="@dimen/_62sdp"
+        android:layout_height="@dimen/_62sdp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/app_black"
+        />
+
+    <com.uhungry.custom_widget.TextViewRobotoReguler
+        android:id="@+id/tvProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_16ssp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="Neha dubey"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_2sdp"
+       />
+    <com.uhungry.custom_widget.TextViewRobotoReguler
+        android:id="@+id/tvProfileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12ssp"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:text="neha.mindiii@gmail.com"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_2sdp"
+        />
+    <com.uhungry.custom_widget.TextViewRobotoReguler
+        android:id="@+id/tvProfileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12ssp"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:text="+91-0136542789"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_2sdp"
+        />
+
+</LinearLayout>

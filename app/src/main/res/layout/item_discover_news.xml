@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_120sdp"
+    android:layout_height="@dimen/_120sdp"
+    android:layout_margin="@dimen/_1sdp"
+    >
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="2dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_2sdp"
+            android:layout_centerInParent="true">
+
+
+            <com.uhungry.custom_widget.TextViewRobotoReguler
+                android:id="@+id/tvNewsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/_12ssp"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorPrimary"
+                android:padding="@dimen/_2sdp"
+                android:text="What is Lorem ipsum?" />
+
+
+            <com.uhungry.custom_widget.TextViewRobotoLight
+                android:id="@+id/tvNewsDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/app_black"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:maxLines="4"
+                android:text="@string/text_subcription_txt" />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

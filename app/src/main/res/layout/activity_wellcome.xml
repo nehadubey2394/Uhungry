@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="false"
+    android:background="@color/white"
+    tools:context="com.uhungry.activity.WellcomeActivity">
+
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_above="@+id/lyBottom"
+        android:layout_marginBottom="-5dp"
+        tools:openDrawer="start">
+
+        <include
+            layout="@layout/app_bar_navigation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="false"
+            app:itemTextColor="@color/colorPrimary"
+            android:elevation="@dimen/_4sdp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/half_white"
+                android:orientation="vertical">
+
+                <include layout="@layout/nav_header_navigation_drawer" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rycslidermenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+
+        </android.support.design.widget.NavigationView>
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <LinearLayout
+        android:id="@+id/lyBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/transperant3"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/shadow_gray"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/red"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:gravity="center"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            android:background="@color/mid_gray">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/bottombar_color"
+                android:gravity="center"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.uhungry.custom_widget.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <ImageView
+                            android:id="@+id/ivHomeProfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/inactive_fridge_icon" />
+
+                    </com.uhungry.custom_widget.RippleView>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/gray"
+                    />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.uhungry.custom_widget.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <ImageView
+                            android:id="@+id/ivDiscover"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/inactive_discover_icon"
+                            />
+                    </com.uhungry.custom_widget.RippleView>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/gray"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <com.uhungry.custom_widget.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <ImageView
+                            android:id="@+id/ivMyProfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/inactive_profile_icon"
+                            />
+
+                    </com.uhungry.custom_widget.RippleView>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/gray"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.uhungry.custom_widget.RippleView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <ImageView
+                            android:id="@+id/ivRecipeList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/inactive_fork_icon"
+                            />
+
+                    </com.uhungry.custom_widget.RippleView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/sample1"
+    android:layout_height="@dimen/_135sdp"
+    android:layout_margin="@dimen/_2sdp"
+    app:clickToClose="true">
+
+    <LinearLayout
+        android:tag="side"
+        android:id="@+id/left_swipe_wrapper"
+        android:layout_width="@dimen/_82sdp"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:layout_width="@dimen/_3sdp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/lyRemove"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/remove_icon"
+                />
+
+            <com.uhungry.custom_widget.TextViewRobotoReguler
+                android:id="@+id/delete"
+                android:text="@string/text_remove"
+                android:background="@color/red"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:id="@+id/lyMain"
+        android:padding="1dp"
+        android:background="@drawable/bg_gray_border"
+        >
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp">
+
+            <ImageView
+                android:id="@+id/ivFavRecImg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                android:scaleType="fitXY"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:alpha="0.9"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/_2sdp"
+                android:background="@drawable/bg_ly_opcity"
+                >
+
+                <com.uhungry.custom_widget.TextViewRobotoMedium
+                    android:id="@+id/tvFavRecName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Petties" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvFavRecName"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@drawable/watch_icon"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        />
+
+                    <com.uhungry.custom_widget.TextViewRobotoReguler
+                        android:id="@+id/tvFavTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/_12ssp"
+                        android:gravity="start|center_vertical"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="1 Hours" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.daimajia.swipe.SwipeLayout>

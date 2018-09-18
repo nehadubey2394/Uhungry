@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/recipeActionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        layout="@layout/discover_actionbar_layout"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recipeActionbar"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:overScrollMode="never"
+        android:layout_marginTop="@dimen/_2sdp"
+        >
+
+        <LinearLayout
+            android:id="@+id/lyMainDisc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_margin="@dimen/_4sdp"
+            >
+
+            <LinearLayout
+                android:id="@+id/lyChef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:layout_marginLeft="1.5dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/chef_icon"
+                            />
+
+                        <com.uhungry.custom_widget.TextViewRobotoMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="@dimen/_14ssp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/app_black"
+                            android:textAllCaps="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="@string/text_featured_chefs" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lyViewAllChef"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/_2sdp"
+                        android:gravity="center"
+                        >
+
+                        <com.uhungry.custom_widget.TextViewRobotoReguler
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="@dimen/_14ssp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:text="@string/text_view_all" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:background="@drawable/back_icon"
+                            android:rotation="180"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvChef"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-1dp"
+                    android:overScrollMode="never"
+
+                    >
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lyVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:layout_marginLeft="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/video_player_icon"
+                            />
+
+                        <com.uhungry.custom_widget.TextViewRobotoMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="@dimen/_14ssp"
+                            android:gravity="center_vertical"
+                            android:textAllCaps="true"
+                            android:textColor="@color/app_black"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="@string/text_videos" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lyViewAllVideo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/_2sdp"
+                        android:gravity="center"
+                        >
+
+                        <com.uhungry.custom_widget.TextViewRobotoReguler
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="@dimen/_14ssp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:text="@string/text_view_all" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:background="@drawable/back_icon"
+                            android:rotation="180"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-1dp"
+                    android:overScrollMode="never"
+                    >
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyUcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:layout_marginLeft="2dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/fork_icon"
+                            />
+
+                        <com.uhungry.custom_widget.TextViewRobotoMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="@dimen/_14ssp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/app_black"
+                            android:textAllCaps="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="@string/text_uhungry_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lyViewAllUhungryContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/_2sdp"
+                        android:gravity="center"
+                        >
+
+                        <com.uhungry.custom_widget.TextViewRobotoReguler
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="@dimen/_14ssp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:text="@string/text_view_all" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:background="@drawable/back_icon"
+                            android:rotation="180"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvUhungryCOntent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-1dp"
+                    android:overScrollMode="never"
+                    >
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_4sdp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:layout_marginLeft="2dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/news_icon"
+                            />
+
+                        <com.uhungry.custom_widget.TextViewRobotoMedium
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="@dimen/_14ssp"
+                            android:gravity="center_vertical"
+                            android:textAllCaps="true"
+                            android:textColor="@color/app_black"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="@string/text_news" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lyViewAllNews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/_2sdp"
+                        android:gravity="center"
+                        >
+
+                        <com.uhungry.custom_widget.TextViewRobotoReguler
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="@dimen/_14ssp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:text="@string/text_view_all" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:background="@drawable/back_icon"
+                            android:rotation="180"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-1dp"
+                    android:overScrollMode="never"
+                    >
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/red"
+        android:text="Under developent !"/>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b30000</color>
+    <color name="colorPrimaryDark">#900202</color>
+    <color name="colorAccent">#e27070</color>
+
+    <color name="white">#ffffff</color>
+    <color name="bottombar_color">#e1e1e1</color>
+    <color name="white_transperent">#99FFFFFF</color>
+    <color name="dark_white">#EEEEEE</color>
+    <color name="half_white">#f4f4f4</color>
+    <color name="black">#000000</color>
+    <color name="app_black">#333333</color>
+    <color name="red">#b30000</color>
+    <color name="shadow_gray">#80D3D3D3</color>
+    <color name="transperant1">#80000000</color>
+    <color name="gray">#828282</color>
+    <color name="blue">#3a5a98</color>
+    <color name="textfield_bg">#F7F5DF</color>
+
+    <color name="green">#3f9d2f</color>
+    <color name="mid_gray">#D3D3D3</color>
+    <color name="darkgray">#808B96</color>
+    <color name="transparent2">#00808B96</color>
+    <color name="transperant3">#59000000</color>
+</resources>

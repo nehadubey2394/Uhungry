@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_65sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/actionbar_shadow">
+
+    <ImageView
+        android:id="@+id/ivFoodTypeBack"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/back_icon"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:visibility="visible"
+        android:paddingLeft="@dimen/_2sdp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivFoodType"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_toRightOf="@+id/ivFoodTypeBack"
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:clickable="false"
+        app:civ_border_color="@color/app_black"
+        app:civ_border_width="1dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/foodtype"
+        />
+
+    <com.uhungry.custom_widget.TextViewRobotoMedium
+        android:id="@+id/actionbarLayout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:textSize="@dimen/_16ssp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/title_cuisines"
+        android:layout_centerInParent="true"/>
+
+
+    <CheckBox
+        android:id="@+id/chbAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textSize="@dimen/_14sdp"
+        android:layoutDirection="rtl"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/btn_txt_all"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/historyActionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        layout="@layout/ingredients_actionbar_layout"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rycHistoryList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp"
+        android:overScrollMode="never"
+        android:layout_below="@+id/historyActionbar"
+        android:scrollbars="none" />
+
+    <com.uhungry.custom_widget.TextViewRobotoReguler
+        android:id="@+id/tvNoRecored"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_14ssp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/text_no_history_found"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

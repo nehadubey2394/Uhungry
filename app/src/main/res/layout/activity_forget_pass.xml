@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    tools:context="com.uhungry.activity.ForgetPassActivity">
+
+    <ImageView
+        android:id="@+id/actionbar_btton_back"
+        android:layout_width="@dimen/_26sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/back_icon"
+        android:tint="@color/app_black"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_255sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/logo"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:background="@drawable/login_textfield_bg">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_2sdp"
+                android:src="@drawable/email_icon" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@color/gray"
+                android:layout_marginLeft="@dimen/_8sdp"/>
+
+            <com.uhungry.custom_widget.EditTextRobotoLight
+                android:id="@+id/etForgetPassEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ems="14"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:hint="@string/enter_email"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/app_black"
+                android:textColorHint="@color/app_black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/red_btn_bg"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/btn_submit"/>
+    </LinearLayout>
+</RelativeLayout>

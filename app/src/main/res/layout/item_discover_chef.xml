@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_120sdp"
+    android:layout_height="@dimen/_120sdp"
+    android:layout_marginRight="@dimen/_1sdp"
+    android:layout_marginLeft="@dimen/_1sdp"
+    >
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="2dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+
+            <RelativeLayout
+                android:id="@+id/lyVideo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_85sdp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@color/gray"
+                    android:scaleType="centerCrop"
+                    />
+
+                <ImageView
+                    android:id="@+id/ivPlay"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="@drawable/video_icon"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivChef"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:src="@drawable/app_icon"
+                android:scaleType="centerCrop"
+                />
+
+            <com.uhungry.custom_widget.TextViewRobotoLight
+                android:id="@+id/tvNewsDes"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:padding="@dimen/_4sdp"
+                android:visibility="gone"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/app_black"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:maxLines="6"
+                android:ellipsize="end"
+                android:text="@string/text_subcription_txt" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp"
+                android:gravity="center"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="center"
+                >
+
+                <com.uhungry.custom_widget.TextViewRobotoReguler
+                    android:id="@+id/tvChefName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_12ssp"
+                    android:gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="@dimen/_2sdp"
+                    android:textColor="@color/app_black"
+                    android:layout_centerInParent="true"
+                    android:text="neha" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

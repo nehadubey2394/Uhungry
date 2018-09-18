@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/half_white">
+
+    <include
+        android:id="@+id/profileActionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        layout="@layout/actionbar_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileActionbar"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:background="@color/half_white"
+        android:gravity="center">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_195sdp"
+            android:gravity="center"
+            android:background="@drawable/splash_bg">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <RelativeLayout
+                android:id="@+id/lyProfilePic"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="@dimen/_95sdp"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile_screen"
+                    >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivProfilePic"
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/_85sdp"
+                        android:visibility="visible"
+                        android:layout_gravity="center"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="@color/app_black"
+                        android:clickable="false"
+                        android:layout_centerInParent="true"
+                        />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:clickable="false"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:background="@drawable/camera_icon"/>
+
+            </RelativeLayout>
+
+            <com.uhungry.custom_widget.EditTextRobotoReguler
+                android:id="@+id/etProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lyProfilePic"
+                android:text="Broderick"
+                android:singleLine="true"
+                android:ems="14"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:enabled="false"
+                android:background="@null"
+                android:textSize="@dimen/_16ssp" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/email_icon" />
+
+
+            <com.uhungry.custom_widget.EditTextRobotoLight
+                android:enabled="false"
+                android:id="@+id/etProfileEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:cursorVisible="true"
+                android:ems="17"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:hint="@string/enter_email"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/app_black"
+                android:textColorHint="@color/app_black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/phone_icon" />
+
+
+            <com.uhungry.custom_widget.EditTextRobotoLight
+                android:id="@+id/etProfileContact"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ems="15"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:hint="@string/enter_contact"
+                android:imeOptions="actionDone"
+                android:enabled="false"
+                android:inputType="number"
+                android:cursorVisible="true"
+                android:maxLines="1"
+                android:maxLength="12"
+                android:singleLine="true"
+                android:textColor="@color/app_black"
+                android:textColorHint="@color/app_black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyProfilePass"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:padding="@dimen/_2sdp"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/password_icon"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"/>
+
+
+            <com.uhungry.custom_widget.TextViewRobotoLight
+                android:id="@+id/etProfPass"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:hint="@string/enter_change_pass"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:editable="false"
+                android:enabled="false"
+                android:textColor="@color/app_black"
+                android:textColorHint="@color/app_black"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+
+        <com.uhungry.custom_widget.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            >
+            <Button
+                android:id="@+id/btnProfileUpdate"
+                android:layout_width="@dimen/_265sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="@string/btn_update"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_14ssp"
+                android:padding="@dimen/_2sdp"
+                android:background="@drawable/red_btn_bg"/>
+
+        </com.uhungry.custom_widget.RippleView>
+
+    </LinearLayout>
+
+</RelativeLayout>

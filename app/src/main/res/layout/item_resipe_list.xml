@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/sample1"
+    android:layout_height="@dimen/_135sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    app:clickToClose="true">
+
+    <LinearLayout
+        android:tag="side2"
+        android:id="@+id/left_swipe_wrapper"
+        android:layout_width="@dimen/_82sdp"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:layout_width="@dimen/_3sdp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/lyRemove"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/remove_icon"
+                />
+
+            <com.uhungry.custom_widget.TextViewRobotoReguler
+                android:id="@+id/delete"
+                android:text="@string/text_remove"
+                android:background="@color/red"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:tag="side1"
+        android:id="@+id/right_swipe_wrapper"
+        android:layout_width="@dimen/_82sdp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/lyFav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:clickable="true"
+            android:background="@color/red"
+            >
+
+            <ImageView
+                android:id="@+id/ivFav"
+                android:background="@drawable/favourite_icon"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_gravity="center"
+                />
+
+            <com.uhungry.custom_widget.TextViewRobotoReguler
+                android:text="@string/text_favourite"
+                android:background="@color/red"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gray_border"
+        android:gravity="center"
+        android:padding="1dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/ivRecImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:id="@+id/lyMain"
+            android:clickable="true"
+            >
+
+            <LinearLayout
+                android:id="@+id/lyPercentage"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:clickable="false"
+                android:padding="@dimen/_2sdp"
+                android:background="@drawable/ritegle_icon"
+                >
+
+                <com.uhungry.custom_widget.TextViewRobotoReguler
+                    android:id="@+id/tvPercentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="4"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="2dp"
+                    android:textAllCaps="true"
+                    android:text="800%" />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:alpha="0.9"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/_2sdp"
+                android:background="@drawable/bg_ly_opcity"
+                >
+
+                <com.uhungry.custom_widget.TextViewRobotoMedium
+                    android:id="@+id/tvRecipeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Petties" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvRecipeName"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@drawable/watch_icon"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        />
+
+                    <com.uhungry.custom_widget.TextViewRobotoReguler
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/_12ssp"
+                        android:gravity="start|center_vertical"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="1 Hours" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.daimajia.swipe.SwipeLayout>

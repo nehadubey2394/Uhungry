@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.uhungry.activity.FoodTypeGroceryActivity">
+
+
+    <include
+        android:id="@+id/groceryActionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        layout="@layout/actionbar_layout"/>
+
+    <ExpandableListView
+        android:id="@+id/lvFTgrocery"
+        android:layout_below="@+id/groceryActionbar"
+        android:layout_above="@+id/btnFTdone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:childDivider="@color/white"
+        android:dividerHeight="1dp"
+        android:divider="@null"
+        android:groupIndicator="@null"/>
+
+
+        <Button
+            android:id="@+id/btnFTdone"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:elevation="@dimen/_4sdp"
+            android:text="@string/btn_txt_done"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:padding="@dimen/_2sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/red_btn_bg"/>
+
+    <TextView
+        android:id="@+id/tvEmptyList"
+        android:text="@string/text_no_result_found"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="@dimen/_14ssp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
